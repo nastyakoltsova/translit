@@ -1,0 +1,186 @@
+* {
+    margin: auto;
+    font-family: IBM Plex Mono, sans-serif;
+    background-color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    color: rgb(70,32,171);
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+form.addWord {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    height: 56px;
+    border: 2px solid black;
+    border-radius: 14px;
+    margin-bottom: 50px;
+}
+
+form.addWord input {
+    border: none;
+    outline: none;
+    width: 380px;
+    font-size: 18px;
+    margin-left: 10px;
+
+}
+
+form.addWord button {
+    background-color: black;
+    color: white;
+    width: 107px;
+    height: 47px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-right: 4px;
+}
+
+form.addWord button:hover {
+    cursor: pointer;
+}
+
+table {
+    overflow: hidden;
+    width: 500px;
+    border-collapse: collapse;
+    font-size: 18px;
+    border-radius: 14px;
+}
+
+.tab {
+    border-radius: 14px;
+}
+
+th {
+    text-align: left;
+    padding-left: 30px;
+}
+
+th.rus{
+    height: 50px;
+    border-right: 2px solid black;
+    background-color: rgb(240,240,240);
+    font-weight: lighter;
+}
+
+th.trans {
+    background-color: rgb(217,216,216);
+    font-weight: lighter;
+    /*border: 2px solid black;*/
+}
+
+.words {
+    display: flex;
+    flex-direction: row;
+}
+
+.del {
+    width: 15px;
+    text-align: right;
+}
+
+.numbers {
+    background-color: rgb(240,240,240);
+    width: 1px;
+    border: none;
+}
+
+.deleteBox {
+    background-color:rgb(217,216,216);
+    width: 10px;
+    border: none;
+    font-weight: lighter;
+}
+
+.deleteIcon {
+    width: 22px;
+    margin-right: 6px;
+    margin-top: 2px
+}
+
+.dlBtn:hover {
+    cursor: pointer;
+}
+
+.span {
+    visibility: hidden;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-left: -50px;
+    margin-top: 15px;
+    padding: 8px 16px 10px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.forHint:hover .span{
+    visibility: visible;
+}
+
+.container {
+
+}
+
+.delete {
+    display: block;
+    margin-top: 40px;
+    border-radius: 8px;
+    background-color: rgb(173,173,173);
+    color: black;
+    border-width: 0;
+    font-weight: lighter;
+    width: 176px;
+    height: 38px;
+    margin-bottom: 70px;
+    font-size: 18px;
+}
+
+.delete:hover {
+    cursor: pointer;
+}
+
+.x {
+    border-radius: 100%;
+    width: 22px;
+    vertical-align:middle
+}
+
+@media (max-width: 767px) {
+    .header {
+        font-size: 35px;
+    }
+    form.addWord {
+        width: 328px;
+    }
+    table {
+        width: 328px;
+        font-size: 16px;
+    }
+    form.addWord input{
+        font-size: 16px;
+    }
+    form.addWord button {
+        width: 90px;
+        font-size: 16px;
+    }
+    .words {
+        width: 328px;
+    }
+}
